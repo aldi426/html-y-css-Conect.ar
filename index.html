@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia Conect.ar</title>
+</head>
+
+<body>
+    <header>
+        <!-- encabezado azul: imagen-Home-Portfolio-Ebooks-Mentorias- btn Contacto -->
+        <div class="logo">
+            <img src="/imagenes/logo_transp.png" alt="logo" srcset="">
+        </div>
+            <button class="hamburguesa" onclick="this.classList.toggle('activo'); document.querySelector('nav').classList.toggle('abierto')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        <nav> 
+            <div class="navbar"><a href="#inicio">Home</a></div>
+            <div class="navbar"><a href="#Portfolio">Portfolio</a></div>
+            <div class="navbar"><a href="#ebooks">Ebooks</a></div>
+            <div class="navbar"><a href="#cursos">Mentorias</a></div>
+            <div class="btn1"><a href="#contacto">Contacto</a></div>
+        </nav>
+    </header>
+
+    <main>
+<!-- conectamos izq y foto con camara izq -->
+        <section id="inicio" class="seccion-bienvenida">
+            <img src="/imagenes/fondo_1_main.png" class="fondo-img">
+                <div class="contenedor columnas">
+                    <div class="columna-texto-izq">
+                        <h1>Conectamos tu visión con el mundo digital</h1>
+                        <p>Capacitaciones estratégicas, acompañamiento y soluciones creativas en formato digital y físico, diseñadas para profesionalizar tu marca personal, negocio o emprendimiento.</p>
+                      <a href="https://wa.me/543412747464?text=Hola!%20Quiero%20empezar%20hoy%20con%20Conect.ar" target="_blank">
+                        <button class="btn-accion"> EMPEZÁ HOY!</button></a>
+                    </div>
+                    <div class="columna-foto-camara-der">
+                        <img src="/imagenes/foto-camara1.png" alt="fotoconcamara">
+                    </div>
+                </div>
+        </section>
+ <!-- caja lavanda con 3 fichas descargas gratis -->
+        <section id="descarga-gratis" class="gratis">
+            <h1 class="Regalo-exclusivo"> 🎁 Regalo exclusivo para la comunidad de Conect.ar</h1>
+            <div class="contenedor-de-tres-fichas">
+                <div class="ficha">
+                    <img src="/imagenes/HOJA DE RUTA.jpg" alt="Hoja de ruta">
+                    <h2>Hoja de Ruta Estratégica</h2>
+                    <p><strong>QUÉ ES?</strong> Es una guía paso a paso para verificar quién es tu cliente ideal, qué contenido podés crear para tus redes sociales y organizar en qué días y en qué horarios vas a publicar tu contenido</p>
+                    <a href="https://canva.link/u5gsxbndqqa3lm8" target="_blank" class="btn-regalo">DESCARGAR GRATIS</a>
+                </div>
+                <div class="ficha">
+                    <img src="/imagenes/MANUAL.jpg" alt="Manual de Usuarios">
+                    <h2>Manual de Usuarios y Contraseñas</h2>
+                    <p><strong>QUÉ ES?</strong> Es una guía para organizar y proteger todos tus accesos a las diferentes aplicaciones que tienen un LOG IN y no depender sólo de la memoria del autoguardado del celular</p>
+                    <a href="https://www.canva.com/brand/brand-templates/EAHSshrUXWw" target="_blank" class="btn-regalo">DESCARGAR GRATIS</a>
+                </div>
+                <div class="ficha-destacada">
+                    <img src="/imagenes/PLANNER.jpg" alt="Planner Mensual">
+                     <h2>Planner Mensual</h2>
+                    <p><strong>QUÉ ES?</strong> Es un sistema de organización premium, para maximizar tu productividad diaria y mensualmente. Es el mismo sistema que utilizamos para cada uno de nuestros clientes</p>
+                    <a href="https://mpago.la/33VRzVx" target="_blank" class="btn-comprar">Precio Promocional</a>
+                </div>
+            </div>
+        </section>
+ <!-- todo funciona pero no olvidar conectar los "a #"" con los verdaderos links de MP -->
+        <section id="Portfolio" class="Portfolio">
+            <img src="/imagenes/fondo_2_ main.png" alt="fondo-img2" class="fondo-img2">
+            <div class="galeria">
+                <img src="/imagenes/planes.jpg" alt="f1" class="f1">
+                <img src="/imagenes/imanes.jpg" alt="f2" class="f1">
+                <img src="/imagenes/stickers.jpg" alt="f3" class="f1">
+                <img src="/imagenes/tarj pers.jpg" alt="f4" class="f1">
+                <img src="/imagenes/volantes.jpg" alt="f5" class="f1">
+            </div>
+            <div class="portfolio-texto">
+                <h2>Nuestro Portfolio Comercial</h2>
+                <p>Transformamos ideas en realidades visuales. Desde branding hasta estrategias digitales, cada proyecto en Conect.ar es un compromiso con la excelencia y la identidad de tu marca.</p>
+                <a href="https://wa.me/5493412747464?text=Hola!%20Quiero%20pedir%20una%20cotización%20para:" target="_blank" class="btn-cotizacion">Pedir Cotización</a> 
+            </div>
+        </section>            
+         <!-- HASTA ACA TENGO EL PORTFOLIO TERMINADO NO OLVIDAR # CON EL LINK DE WSP-->
+        <section id="ebooks" class="digital">
+            <h1>Potenciá tu marca</h1>
+            <p>Te damos las herramientas para que vos también transformes tu negocio. Descubrí nuestras guías exclusivas sobre IA, estrategia y diseño.</p>
+            <div class="container">
+              <div class="ebooks">
+                <img src="/imagenes/tapa 1.jpg" alt="Ebook1" class="es">
+                <h2>Aprendé a gestionar tu IA: desde cero</h2>
+                <p><strong>Domina la IA: De Principiante a Experto en tu Día a Día. </strong>¿Sentís que la tecnología va más rápido que vos? No te quedes afuera. Si nunca usaste ChatGPT o te genera desconfianza, este ebook es para vos. Te enseño desde cómo instalarlo en tu celular hasta cómo darle órdenes claras para que planifique tu semana. Es una guía diseñada para aprender a tu ritmo, sin palabras difíciles, para que recuperes el control de tus tareas y te animes a innovar sin miedo. </p>
+                <h3><strong>Precio destacado:</strong> $20.000</h3>
+                <a href="https://mpago.la/2XVEJuv" class="btn-e1">LO QUIERO!</a>
+                </div>
+                <div class="ebooks">
+                    <img src="/imagenes/tapa 2.jpg" alt="ebook2" class="es">
+                    <h2>Aprendé a gestionar tu IA: Estrategía para marca personal y emprendedores</h2>
+                    <p><strong>Tu Negocio Potenciado: </strong>Profesionalizá tu emprendimiento y ganá tiempo real. En esta guía avanzada, te enseño a usar la IA para definir a tu cliente ideal, organizar contenidos estratégicos y automatizar procesos diarios. Aprendé a controlar tus costos y a utilizar plantillas para diseñar una identidad visual completa, desde logos hasta paletas de colores. Un manual práctico para transformar tu trayectoria en un negocio optimizado, rentable y con una imagen sólida que destaque en el mercado actual.</p>
+                    <h3><strong>Precio destacado:</strong> $60.000</h3>
+                    <a href="https://mpago.la/1KQiFtT" class="btn-e1">LO QUIERO!</a>
+                </div>
+                <div class="ebooks">
+                    <img src="/imagenes/mockup libros conect.ar (1).png" alt="ebookcombo" class="es">
+                    <h2>Combo: Aprendé a gestionar tu IA - Tomo: 1 y 2</h2>
+                    <p>Llevate la experiencia completa y transformá tu relación con la IA de principio a fin. Este pack incluye la guía inicial para perder el miedo y dominar las tareas cotidianas, junto al manual avanzado para profesionalizar tu negocio con estrategias de marketing, finanzas y diseño digital. Es la hoja de ruta definitiva para quienes buscan autonomía total, desde la primera instalación hasta la optimización de un emprendimiento rentable. Accedé a todo el conocimiento de Conect.ar en un solo paso y asegurate de que la Inteligencia Artificial sea tu mejor aliada hoy mismo.</p>
+                    <h3><strong>Precio destacado:</strong> $65.000</h3>
+                    <a href="https://mpago.la/2Gpaiwg" class="btn-e1">LOS QUIERO!</a>
+                </div>
+                <div class="ebooks">
+                    <img src="/imagenes/PLANNER.jpg" alt="planner" class="es">
+                    <h2>Planner Mensual</h2>
+                    <p><STrong>Orden estratégico:</STrong> Llevate la herramienta central que utilizamos en nuestra agencia para organizar cada marca que gestionamos y garantizar una comunicación profesional. Este planner mensual es el mismo recurso que entregamos a nuestros clientes e incluye, de forma integrada, nuestra Hoja de Ruta Estratégica para que identifiques a tu cliente ideal y planifiques tus contenidos con claridad. Es el sistema perfecto para bajar tus ideas al papel, organizar tus horarios de publicación y mantener la constancia que tu emprendimiento necesita para crecer con bases sólidas y un propósito claro.</p>
+                    <h3><strong>Precio destacado:</strong> $10.000</h3>
+                    <a href="https://mpago.la/33VRzVx" class="btn-e1">LO QUIERO!</a>
+                </div>
+                
+        <div class="contenedor-video">
+            <iframe width="344" height="612" src="https://www.youtube.com/embed/HJGHTXBYX2o" title="Aprende a gestionar tu IA - Tomo 1: Desde Cero" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+            </div>
+        </section>
+        <!-- HASTA ACA TENGO LOS EBOOKS CARGADOS FALTA CONECTAR LOS # CON LOS LINK DE MP-->
+        
+        <section id="cursos" class="cursos">
+            <img src="/imagenes/fondo_1_main.png" alt="fondo-img3" class="fondo-img3">
+            <h1 class="titulo-cursos">🎓 Nuestros Talleres</h1>
+            <p class="subtitulo-cursos">Aprendé, crecé y conectá con la tecnología a tu ritmo</p>
+        <div class="contenedor-talleres">
+
+            <div class="ficha-taller">
+                <img src="/imagenes/taller_celulares.jpg" alt="Taller Nuevas Tecnologías">
+                <h2>Taller de Nuevas Tecnologías</h2>
+                <p><strong>¿DE QUÉ TRATA?</strong> Taller de celulares para adultos y adultos mayores en Vecinal Lisandro de la Torre. Aprendé a usar tu celular con confianza y autonomía.</p>
+                <a href="https://wa.me/3412747464" target="_blank" class="btn-taller">+ INFO</a>
+            </div>
+
+            <div class="ficha-taller">
+                <img src="/imagenes/taller_redes_soc.jpg" alt="Taller Redes Sociales">
+                <h2>Taller de Redes Sociales</h2>
+                <p><strong>¿DE QUÉ TRATA?</strong> Aprendé a utilizar tus redes sociales para potenciar tu negocio. Estrategias simples y efectivas para emprendedores.</p>
+                <a href="https://wa.me/3412747464" target="_blank" class="btn-taller">+ INFO</a>
+            </div>
+            <div class="ficha-taller">
+                <img src="/imagenes/Taller_IA.jpg" alt="Taller IA desde Cero">
+                <h2>Taller de IA desde Cero</h2>
+                <p><strong>¿DE QUÉ TRATA?</strong> Aprendé a utilizar los nuevos asistentes de inteligencia artificial del mercado. Sin conocimientos previos, paso a paso.</p>
+                <a href="https://wa.me/3412747464" target="_blank" class="btn-taller">+ INFO</a>
+            </div>
+
+            <div class="ficha-taller">
+                <img src="taller-fotoproducto.jpg" alt="Taller FotoProducto">
+                <h2>Taller FotoProducto con tu celular</h2>
+                <p><strong>¿DE QUÉ TRATA?</strong> Ideal para quienes quieren sacar fotos profesionales con su celular, aprovechando al máximo la resolución y la luz.</p>
+                <a href="https://wa.me/3412747464" target="_blank" class="btn-taller">+ INFO</a>
+            </div>
+
+        </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+    <h1 class="titulo-contacto">¿Conectamos?</h1>
+    <p class="subtitulo-contacto">Escribinos y nos ponemos en contacto a la brevedad</p>
+
+    <div class="contenedor-contacto">
+        <div class="formulario">
+            <input type="text" placeholder="Tu nombre" class="campo">
+            <input type="email" placeholder="Tu email" class="campo">
+            <textarea placeholder="¿En qué te podemos ayudar?" class="campo campo-consulta"></textarea>
+            <button class="btn-enviar">ENVIAR</button>
+        </div>
+
+        <div class="info-contacto">
+            <p>📸 <a href="http://instagram.com/conect.ar_digital" target="_blank">@conect.ar_digital</a></p>
+            <p>📞 <a href="http://wa.me/3412747464" target="_blank">WhatsApp</a></p>
+            <p>✉️ hola@conectar.com.ar</p>
+        </div>
+    </div>
+    </section>
+    </main>
+
+    <footer>
+        <div class="enlaces-footer">
+            <div class="vacio0"></div>
+            <div class="copyright">
+                <p>Desde Rosario al Mundo 🚀</p>
+                <p>© 2026 Conect.ar Studio Digital</p>  
+            </div>
+            <div class="enlaces">
+                <a href="http://instagram.com/conect.ar_digital">📸 Instagram</a>
+                <a href="http://wa.me/3412747464">📞 WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/3412747464" target="_blank" class="btn-wsp-flotante">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+</html>

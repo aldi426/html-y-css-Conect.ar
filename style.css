@@ -1,0 +1,722 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #1f2e8A;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:110px;
+    padding: 10px 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 30px;
+    padding-right: 200px;
+
+    }
+.logo img{
+    width:250px;
+    display:block;
+    }
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+nav a {
+    color: #c7b8ff;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 20px;
+}
+.navbar {
+    margin-right: 25px;
+}
+.btn1 a{
+    background-color: #c7b8ff;
+    color: #1f2e8A;
+    margin-left: 50px;
+    padding: 8px 15px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* //hasta aca el header esta perfecto y no hay q hacer ninguna modificacion */
+ main {
+    width: 100%;
+ }
+#inicio {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+.fondo-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.contenedor.columnas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    z-index: 1;
+}
+/* hasta aca visualmente se ve perfecto! 2 detalles a cambiar, letra y color lado izq e img mas chica lado der */
+.columna-texto-izq {
+     font-family: 'Montserrat', sans-serif;
+     color: #1f2e8A;
+     font-size: 20px;
+     text-align: center;
+}
+.columna-texto-izq p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.columna-foto-camara-der img{
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+}
+.btn-accion {
+    margin-top: 50px;
+    background-color: #1f2e8A;
+    color: #c7b8ff;
+    font-size: 25px;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 40px;
+    cursor: pointer;
+}
+/*hasta aca se ve excelente, yo no tocaria mas nada, e iria a armar las cards 
+para servicios del portfolio y cards + video para ebooks */
+#descarga-gratis {
+    background-color: #b19dfa;
+    font-family: 'Montserrat', sans-serif;
+    color: #1f2e8A;
+    margin-top: 0;
+    text-align: center;
+    padding: 20px;
+}
+.ficha {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0,1);
+    margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.ficha p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.ficha h2{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.ficha-destacada {
+    background-color: #f3e2e2;
+    padding: 20px;
+    border-radius: 20px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0,1);
+    margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.ficha-destacada h2{
+        margin-top: 10px;
+    margin-bottom: 5px;
+}
+.ficha-destacada p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.contenedor-de-tres-fichas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+.contenedor-de-tres-fichas a{
+    background-color: #1f2e8A;
+    color: #c7b8ff;
+    font-size: 12px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 40px;
+    cursor: pointer; 
+}
+/*Hasta aca tengo las fichas de regalo y no deberia de arreglar mas nada*/
+.ficha img{
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.ficha-destacada img{
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+/* vamos al portfolio*/
+.fondo-img2 {
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.Portfolio {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 50px;
+}
+.galeria{
+    display: grid;
+    gap: 15px;
+    width: 48%;
+    grid-template-columns: repeat(3, 1fr);
+}
+.f1 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.portfolio-texto{
+    font-family: 'Montserrat', sans-serif;
+    color: #1f2e8A;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.portfolio-texto h2{
+    margin-bottom: 10px;
+}
+.portfolio-texto p{
+    margin-bottom: 20px;
+}
+.btn-cotizacion {
+    background-color: #1f2e8A;
+    color: #c7b8ff;
+    font-size: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 40px;
+    cursor: pointer; 
+}
+/*hasta acá se ve el portfolio como quiero*/
+#ebooks{
+    background-color: #b19dfa;
+    font-family: 'Montserrat', sans-serif;
+    color: #1f2e8A;
+    text-align: center;
+    padding: 60px 20px;
+}
+.digital p{
+    font-size: 24px;
+    margin-top: 10px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+.ebooks {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.es {
+    width: 100%;
+    border-radius: 10px;
+}
+.ebooks p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+.ebooks h2{
+    margin: 10px 0;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+.ebooks h3{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.btn-e1{
+    background-color: #1f2e8A;
+    color: #c7b8ff;
+    display: inline-block;
+    width: 80%;
+    font-size: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 30px;
+    cursor: pointer; 
+}
+.contenedor-video {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*para el scroll*/
+html {
+    scroll-behavior: smooth;
+}
+
+/* Talleres / Cursos */
+.cursos {
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    color: #1f2e8a;
+    text-align: center;
+    padding: 60px 20px;
+}
+.titulo-cursos {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.subtitulo-cursos {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.contenedor-talleres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.ficha-taller {
+    background-color: #c7b8ff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.ficha-taller img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.ficha-taller h2 {
+    font-size: 16px;
+    margin-top: 5px;
+}
+.ficha-taller p {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.btn-taller {
+    background-color: #1f2e8a;
+    color: #c7b8ff;
+    font-size: 16px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 35px;
+    cursor: pointer;
+    margin-top: auto;
+}
+.btn-taller:hover {
+    background-color: #1e2a78;
+}
+.cursos {
+    position: relative;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    color: #1f2e8a;
+    text-align: center;
+    padding: 60px 20px;
+    overflow: hidden;
+}
+
+.fondo-img3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.titulo-cursos {
+    position: relative;
+    z-index: 1;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitulo-cursos {
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.contenedor-talleres {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/*contacto*/
+.contacto {
+    background-color: #ede9ff;
+    font-family: 'Montserrat', sans-serif;
+    color: #1f2e8a;
+    text-align: center;
+    padding: 60px 20px;
+}
+.titulo-contacto {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #1f2e8a; 
+}
+.info-contacto a {
+    color: #1f2e8a; 
+    text-decoration: none;
+}
+.btn-enviar {
+    background-color: #1f2e8a;
+    color: #c7b8ff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 40px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+.btn-enviar:hover {
+    background-color: #1e2a78;
+}
+.subtitulo-contacto {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.contenedor-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+}
+.campo {
+    padding: 12px 20px;
+    border-radius: 15px;
+    border: 2px solid #c7b8ff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    outline: none;
+    background-color: #ffffff;
+    color: #1f2e8a;
+}
+.campo-consulta {
+    height: 150px;
+    resize: none;
+}
+.info-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+/*footer*/
+footer{
+    background-color: #1f2e8A;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+}
+.enlaces-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: end;
+    margin-top: 0;
+}
+.enlaces a{
+    color: #c7b8ff;
+    text-decoration: none;
+    display: flex;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 16px;
+    padding-right: 190px;
+}
+
+/*boton flotante wsp*/
+.btn-wsp-flotante {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: white;
+    font-size: 35px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+.btn-wsp-flotante:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.1);
+}
+
+/*media query*/
+/* HAMBURGUESA */
+.hamburguesa {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+.hamburguesa span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #c7b8ff;
+    border-radius: 3px;
+}
+@media (max-width: 768px) {
+
+    /* HAMBURGUESA */
+    .hamburguesa {
+        display: flex;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+    header {
+        flex-wrap: wrap;
+        padding: 15px 20px;
+        height: auto;
+    }
+    nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 0;
+    }
+    nav.abierto {
+        display: flex;
+    }
+    .navbar {
+        margin-right: 0;
+    }
+    .btn1 a {
+        margin-left: 0;
+    }
+
+    /* INICIO */
+    #inicio {
+    padding-top: 2%;
+    padding-bottom: 0;
+    height: auto;
+    }
+    .contenedor.columnas {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .columna-foto-camara-der {
+        display: block;
+        width: 80%;
+    }
+    .columna-foto-camara-der img {
+    width: 100%;
+    }
+    .columna-texto-izq h1 {
+        font-size: 22px;
+        color: #1f2e8a;
+    }
+    .columna-texto-izq p {
+        font-size: 16px;
+    }
+
+    /* REGALOS */
+    .contenedor-de-tres-fichas {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .ficha, .ficha-destacada {
+        width: 90%;
+        margin-right: 0;
+    }
+
+    /* PORTFOLIO */
+    .Portfolio {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .portfolio-texto {
+        order: 1;
+        width: 100%;
+        text-align: center;
+    }
+    .galeria {
+    grid-template-columns: 1fr;
+    order:2;
+    width: 80%;
+    }
+    /* EBOOKS */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ebooks {
+        width: 90%;
+    }
+
+    /* TALLERES */
+    .contenedor-talleres {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ficha-taller {
+        width: 90%;
+    }
+
+    /* CONTACTO */
+    .contenedor-contacto {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .formulario {
+        width: 90%;
+    }
+
+    /* WSP FLOTANTE */
+    .btn-wsp-flotante {
+        bottom: 15px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+    }
+    .enlaces-footer {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        height: auto;
+    }
+    footer {
+        height: auto;
+        padding: 15px;
+    }
+    .enlaces a {
+        padding-right: 0;
+    }
+}
